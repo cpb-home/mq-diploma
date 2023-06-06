@@ -86,7 +86,7 @@ body {
 @media (min-width: 361px) and (max-width: 1199px) {
   
   .header {
-    background-image: url(/images/banner-bg-tablet.jpg);
+    background-image: url(/mq-diploma/images/banner-bg-tablet.jpg);
   }
 
   .menu-label {
@@ -99,7 +99,7 @@ body {
 @media (min-width: 1200px) {
 
   .header {
-    background-image: url(/images/banner-bg.jpg);
+    background-image: url(/mq-diploma/images/banner-bg.jpg);
   }
 
   .menu-label {
