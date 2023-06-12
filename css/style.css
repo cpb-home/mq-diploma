@@ -39,6 +39,7 @@ body {
 .header-container {
   margin: 0 auto;
   padding: 36.55vh 15px;
+  box-sizing: border-box;
 }
 
 .logo-link {
