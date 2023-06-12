@@ -38,7 +38,7 @@ body {
 
 .header-container {
   margin: 0 auto;
-  padding: 36.55vh 15px;
+  padding: 226px 15px;
   box-sizing: border-box;
 }
 
@@ -101,7 +101,7 @@ body {
 .header-title {
   font-size: 26px;
   color: #ffffff;
-  margin: 5.6vh auto 0;
+  margin: 33px auto 0;
   text-transform: uppercase;
   line-height: 36px;
   font-weight: 700;
@@ -117,7 +117,7 @@ body {
   }
 
   .header-container {
-    padding: 11vh 35px;
+    padding: 43px 35px 113px;
   }
 
   .header-logo-line {
@@ -140,7 +140,7 @@ body {
   .header-title {
     font-size: 40px;
     color: #ffffff;
-    margin: 20.5vh auto 31.8vh;
+    margin: 90px auto 0;
     text-transform: uppercase;
     line-height: 55px;
     font-weight: 700;
@@ -157,7 +157,7 @@ body {
   }
 
   .header-container {
-    padding: 29px 15px 130px;
+    padding: 28px 15px 130px;
     width: 1200px;
   }
 
@@ -185,7 +185,7 @@ body {
     display: inline-block;
   }
   .menu-list-item:nth-child(n+2) {
-    margin-left: 35px;
+    margin-left: 31px;
   }
   .menu-list-item-link {
     color: #ffffff;
@@ -204,7 +204,7 @@ body {
   .header-title {
     font-size: 45px;
     color: #ffffff;
-    margin: 20.5vh auto 31.8vh;
+    margin: 105px auto 0;
     text-transform: uppercase;
     line-height: 75px;
     font-weight: 700;
