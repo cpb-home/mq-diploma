@@ -33,8 +33,12 @@ body {
   background-size: cover;
   position: relative;
   z-index: 0;
-  padding: 36.55vh 15px;
   box-sizing: border-box;
+}
+
+.header-container {
+  margin: 0 auto;
+  padding: 36.55vh 15px;
 }
 
 .logo-link {
@@ -109,10 +113,13 @@ body {
   
   .header {
     background-image: url(/mq-diploma/images/banner-bg-tablet.jpg);
-    padding: 11vh 35px;
   }
 
   .header-container {
+    padding: 11vh 35px;
+  }
+
+  .header-logo-line {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,7 +144,7 @@ body {
     line-height: 55px;
     font-weight: 700;
     text-align: center;
-    width: 645px;
+    width: 90%;
   }
 
 }
@@ -148,12 +155,60 @@ body {
     background-image: url(/mq-diploma/images/banner-bg.jpg);
   }
 
+  .header-container {
+    padding: 29px 15px 130px;
+    width: 1200px;
+  }
+
+  .header-logo-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
   .menu-btn {
     display: none;
   }
 
+  .menu {
+    display: block;
+  }
+
+  .menu-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .menu-list-item {
+    display: inline-block;
+  }
+  .menu-list-item:nth-child(n+2) {
+    margin-left: 35px;
+  }
+  .menu-list-item-link {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  .menu-list-item-link:hover {
+    text-decoration: underline;
+  }
+
   .logo-img {
     width: 179px;
+  }
+
+  .header-title {
+    font-size: 45px;
+    color: #ffffff;
+    margin: 20.5vh auto 31.8vh;
+    text-transform: uppercase;
+    line-height: 75px;
+    font-weight: 700;
+    text-align: center;
+    width: 60%;
   }
 
 }
