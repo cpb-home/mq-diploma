@@ -438,6 +438,7 @@ body {
 
 .search-field {
   flex-grow: 1;
+  min-width: 50px;
 }
 
 .search-field::-webkit-search-cancel-button {
@@ -556,6 +557,9 @@ body {
   line-height: 8px;
   transform: translate(0, -50%);
 }
+
+
+/* products */
 
 .products {
   padding-top: 45px;
@@ -819,6 +823,7 @@ body {
 
   .aside {
     margin-top: 0;
+    flex: 1;
   }
   
   .aside-section:nth-child(2) {
@@ -854,6 +859,9 @@ body {
     margin-top: 24px;
   }
 
+
+  /* products */
+
   .products {
     padding-top: 44px;
   }
@@ -863,113 +871,55 @@ body {
     line-height: 14px;
   }
   
-  .products-container {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 2px;
-  }
-  
-  .product {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 0;
-    padding: 16px 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    height: 232px;
-  }
-  
-  .product:after {
-    content: "";
-    position: absolute;
-    top: 0; 
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    opacity: 0.55;
-    z-index: -1;
-  }
-  
-  .product:nth-child(1) {
-    background-image: url(/mq-diploma/images/trend1.jpg);
-  }
-  
-  .product:nth-child(2) {
-    background-image: url(/mq-diploma/images/trend2.jpg);
-  }
-  
-  .product:nth-child(3) {
-    background-image: url(/mq-diploma/images/trend3.jpg);
-  }
-  
-  .product:nth-child(4) {
-    background-image: url(/mq-diploma/images/trend4.jpg);
-  }
-  
-  .product-container {
-    margin: 0 auto;
-    border: 3px solid #b59f5b;
-    padding: 24px 22px 27px;
-    width: 100%;
-  }
-  
-  .product-cat-list {
-    list-style-type: none;
-  }
-  
-  .product-cat-item {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    text-transform: uppercase;
-  }
-  
-  .product-cat-item-link {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    color: #b59f5b;
-  }
-  
-  .product-cat-item-link:hover {
-    text-decoration: underline 2px #b59f5b;
-  }
-  
-  .product-cat-item:nth-child(n+2) {
-    margin-left: 15px;
-  }
-  
-  .product-header {
-    margin: 7px 0 0;
-    padding: 0 5px 0 0;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
 
 
 
 
 
 
+}
 
+@media (min-width: 361px) and (max-width: 715px) {
+  .page-container {
+    gap: 10px;
+  }
 
-
+  .main {
+    width: calc(50% - 10px);
+  }
 
   .aside {
-    flex: 1;
+    width: calc(50% - 10px);
+  }
+
+  .aside-article-img-box {
+    width: 55px;
+    height: 55px;
   }
 
 }
+
+@media (min-width: 361px) and (max-width: 650px) {
+
+  .article-cat-list {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .article-cat-list-item:nth-child(n+2) {
+    margin-left: 0;
+  }
+
+  .aside-article-img-box {
+    display: none;
+  }
+}
+
+
+
+
+
+
 
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -1108,26 +1058,106 @@ body {
 
   .page {
     margin-top: 64px;
-    padding-bottom: 64px;
   }
-
+  
   .page-container {
     margin: 0 auto;
     padding: 0 15px; 
+    width: 1200px;
     display: flex;
-    gap: 30px;
+    gap: 120px;
     flex-wrap: nowrap;
   }
-  
+
   .main {
-    flex-grow: 2.96;
+    width: 778px;
   }
-
-  .aside {
-    flex-grow: 1;
-  }
-
   
+  .article {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 0;
+    padding-bottom: 0;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .article:nth-child(n+2) {
+    margin-top: 60px;
+  }
+  
+  .article-img-box {
+    min-width: 381px;
+  }
+  
+  .article-img {
+    width: 100%;
+  }
+  
+  .article-content {
+    margin-top: 0;
+  }
+  
+  .article-title {
+    margin-top: 13px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .1px;
+  }
+  
+  .article-extra {
+    margin-top: 34px;
+  }
+  
+  .article-author {
+    margin-left: 12px;
+  }
+  
+  .article-text {
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 51px;
+  }
+  
+  .aside {
+    margin-top: 0;
+    max-width: 272px;
+  }
+  
+  .aside-section:nth-child(2) {
+    margin-top: 45px;
+  }
+
+  .aside-section:nth-child(n+3) {
+    margin-top: 63px;
+  }
+  
+  .aside-section-title {
+    font-size: 14px;
+    line-height: 10px;
+  }
+
+
+  /* products */
+  
+  .products {
+    padding-top: 65px;
+  }
+  
+  .products-header {
+    padding: 0;
+    font-size: 20px;
+    line-height: 16px;
+  }
+  
+  .products-header:after {
+    margin: 13px auto 0;
+  }
+  
+  
+
+
+
 }
 
 
