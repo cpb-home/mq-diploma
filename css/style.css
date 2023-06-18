@@ -31,7 +31,7 @@ body {
 /* header */
 
 .header {
-  background-image: url(/mq-diploma/images/banner-mobile.jpg);
+  background-image: url(images/banner-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,11 +172,11 @@ body {
 }
 
 .trend:nth-child(1) {
-  background-image: url(/mq-diploma/images/trend1.jpg);
+  background-image: url(images/trend1.jpg);
 }
 
 .trend:nth-child(2) {
-  background-image: url(/mq-diploma/images/trend2.jpg);
+  background-image: url(images/trend2.jpg);
 }
 
 .trend:nth-child(3) {
