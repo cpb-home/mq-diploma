@@ -1,4 +1,4 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, img, date, ol, ul, li, form, label, article, aside, footer, header, menu, nav, section, time, button, input {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, img, date, ol, ul, li, form, label, article, aside, footer, header, menu, nav, section, time, button, input, picture, source {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -31,7 +31,7 @@ body {
 /* header */
 
 .header {
-  background-image: url(images/banner-mobile.jpg);
+  background-image: url(../images/banner-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,7 +111,7 @@ body {
 }
 
 
-/* page */
+/* trends */
 
 .trends {
   padding-top: 38px;
@@ -176,15 +176,15 @@ body {
 }
 
 .trend:nth-child(2) {
-  background-image: url(/images/trend2.jpg);
+  background-image: url(../images/trend2.jpg);
 }
 
 .trend:nth-child(3) {
-  background-image: url(/mq-diploma/images/trend3.jpg);
+  background-image: url(../images/trend3.jpg);
 }
 
 .trend:nth-child(4) {
-  background-image: url(/mq-diploma/images/trend4.jpg);
+  background-image: url(../images/trend4.jpg);
 }
 
 .trend-container {
@@ -228,6 +228,9 @@ body {
   color: #ffffff;
   text-transform: uppercase;
 }
+
+
+/* page */
 
 .page {
   margin-top: 43px;
@@ -562,7 +565,7 @@ body {
 /* products */
 
 .products {
-  padding-top: 45px;
+  padding: 45px 15px 0;
 }
 
 .products-header {
@@ -586,59 +589,104 @@ body {
 }
 
 .products-container {
-  margin: 24px auto 0;
+  margin: 28px auto 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 25px;
 }
 
 .product-article-img-box {
   margin: 0 auto;
-  background-image: url();
+  padding: 0 23px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-picture {
+  margin-bottom: -5px;
+}
+
+.product-article-img {
+  max-width: 100%;
 }
 
 .product-container {
-  margin: 0 auto;
+  margin: -31px auto 0;
+  padding: 53px 17px 0;
   border: 3px solid #b59f5b;
-  padding: 24px 22px 27px;
-  width: 100%;
-}
-
-.product-cat-list {
-  list-style-type: none;
-}
-
-.product-cat-item {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-.product-cat-item-link {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  color: #b59f5b;
-}
-
-.product-cat-item-link:hover {
-  text-decoration: underline 2px #b59f5b;
-}
-
-.product-cat-item:nth-child(n+2) {
-  margin-left: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .product-header {
-  margin: 7px 0 0;
-  padding: 0 5px 0 0;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
+  font-size: 17px;
+  line-height: 13px;
+  color: #0f0d0e;
   text-transform: uppercase;
 }
+
+.product-description {
+  margin-top: 7px;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.product-link {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+}
+
+.product-footer {
+  margin-top: 22px;
+  display: flex;
+  padding-bottom: 24px;
+}
+
+.product-prices {
+  width: 50%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.product-price-old {
+  color: #0f0d0e;
+  font-size: 14px;
+  line-height: 10px;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.product-price-current {
+  margin-top: 5px;
+  color: #0f0d0e;
+  font-size: 20px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.product-btn {
+  width: 50%;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b59f5b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+
 
 
 

@@ -92,7 +92,7 @@
         </div>
       </div>
     </section>
-    <!-- https://netology-code.github.io/html-2-diploma/sources/images/7.jpg -->
+    
     <div class="page">
       <div class="page-container">
         <main class="main">
@@ -229,7 +229,7 @@
             <h2 class="aside-section-title">Новые посты</h2>
             <div class="aside-article">
               <div class="aside-article-img-box">
-                <img class="aside-article-img" src="/mq-diploma/images/2.jpg" alt="Пляж" title="Пляж">
+                <img class="aside-article-img" src="images/2.jpg" alt="Пляж" title="Пляж">
               </div>
               <div class="aside-article-content">
                 <div class="aside-article-date" datetime="2019-06-14">14 июня 2019</div>
@@ -240,7 +240,7 @@
             </div>
             <div class="aside-article">
               <div class="aside-article-img-box">
-                <img class="aside-article-img" src="/mq-diploma/images/151.jpg" alt="Девушка" title="Девушка">
+                <img class="aside-article-img" src="images/151.jpg" alt="Девушка" title="Девушка">
               </div>
               <div class="aside-article-content">
                 <time class="aside-article-date" datetime="2019-06-14">14 июня 2019</time>
@@ -251,7 +251,7 @@
             </div>
             <div class="aside-article">
               <div class="aside-article-img-box">
-                <img class="aside-article-img" src="/mq-diploma/images/45.jpg" alt="Балкон" title="Балкон">
+                <img class="aside-article-img" src="images/45.jpg" alt="Балкон" title="Балкон">
               </div>
               <div class="aside-article-content">
                 <time class="aside-article-date" datetime="2019-06-14">14 июня 2019</time>
@@ -262,7 +262,7 @@
             </div>
             <div class="aside-article">
               <div class="aside-article-img-box">
-                <img class="aside-article-img" src="/mq-diploma/images/501.jpg" alt="Стол" title="Стол">
+                <img class="aside-article-img" src="images/501.jpg" alt="Стол" title="Стол">
               </div>
               <div class="aside-article-content">
                 <time class="aside-article-date" datetime="2019-06-14">14 июня 2019</time>
@@ -273,7 +273,7 @@
             </div>
             <div class="aside-article">
               <div class="aside-article-img-box">
-                <img class="aside-article-img" src="/mq-diploma/images/7.jpg" alt="Причёски" title="Причёски">
+                <img class="aside-article-img" src="images/7.jpg" alt="Причёски" title="Причёски">
               </div>
               <div class="aside-article-content">
                 <time class="aside-article-date" datetime="2019-06-14">14 июня 2019</time>
@@ -333,10 +333,23 @@
       <h2 class="products-header">Наши изделия</h2>
       <div class="products-container">
         <article class="product">
-          <div class="product-article-img-box"></div>
+          <div class="product-article-img-box">
+            <picture class="product-picture">
+              <source
+                srcset="images/shop-item-mobile1.jpg"
+                media="(max-width: 360px)">
+              <source
+                srcset="images/shop-item-tablet1.jpg"
+                media="(min-width: 361px) and (max-width: 1199px)">
+              <source
+                srcset="images/shop-item-desk1.jpg"
+                media="(min-width: 1200px)">
+              <img class="product-article-img" src="images/shop-item-mobile1.jpg" alt="Подушки">
+            </picture>           
+          </div>
           <div class="product-container">
             <h3 class="product-header">Подушки на диван</h3>
-            <p class="product-description">Набор из двух подушек с модными принтами. Видео о создании <span class="product-link">здесь</span>.</p>
+            <p class="product-description">Набор из двух подушек с модными принтами. Видео о создании <a class="product-link">здесь</a>.</p>
             <div class="product-footer">
               <div class="product-prices">
                 <h4 class="product-price-old">1000 ₽</h4>
@@ -347,7 +360,20 @@
           </div>
         </article>
         <article class="product">
-          <div class="article-img-box"></div>
+          <div class="product-article-img-box">
+            <picture class="product-picture">
+              <source
+                srcset="images/shop-item-mobile2.jpg"
+                media="(max-width: 360px)">
+              <source
+                srcset="images/shop-item-tablet2.jpg"
+                media="(min-width: 361px) and (max-width: 1199px)">
+              <source
+                srcset="images/shop-item-desk2.jpg"
+                media="(min-width: 1200px)">
+              <img class="product-article-img" src="images/shop-item-mobile1.jpg" alt="Подушки">
+            </picture>
+          </div>
           <div class="product-container">
             <h3 class="product-header">Кукла «Зайчик»</h3>
             <p class="product-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span class="product-link">весенняя серия постов</span> в блоге и несколько подкастов.</p>
@@ -361,7 +387,20 @@
           </div>
         </article>
         <article class="product">
-          <div class="article-img-box"></div>
+          <div class="product-article-img-box">
+            <picture class="product-picture">
+              <source
+                srcset="images/shop-item-mobile3.jpg"
+                media="(max-width: 360px)">
+              <source
+                srcset="images/shop-item-tablet3.jpg"
+                media="(min-width: 361px) and (max-width: 1199px)">
+              <source
+                srcset="images/shop-item-desk3.jpg"
+                media="(min-width: 1200px)">
+              <img class="product-article-img" src="images/shop-item-mobile1.jpg" alt="Подушки">
+            </picture>
+          </div>
           <div class="product-container">
             <h3 class="product-header">Шестиугольная рамка</h3>
             <p class="product-description">Необычная рамка для украшения дома из видео <span class="product-link">«Как сделать рамку из подручных средств за 30 минут»</span></p>
