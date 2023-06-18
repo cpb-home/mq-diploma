@@ -172,11 +172,11 @@ body {
 }
 
 .trend:nth-child(1) {
-  background-image: url(images/trend1.jpg);
+  background-image: url(/images/trend1.jpg);
 }
 
 .trend:nth-child(2) {
-  background-image: url(images/trend2.jpg);
+  background-image: url(/images/trend2.jpg);
 }
 
 .trend:nth-child(3) {
