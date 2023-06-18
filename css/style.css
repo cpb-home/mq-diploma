@@ -685,6 +685,11 @@ body {
   font-weight: 700;
   line-height: 10px;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product-btn {
+  background-color: #323232;
 }
 
 
