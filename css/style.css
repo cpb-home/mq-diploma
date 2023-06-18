@@ -688,7 +688,7 @@ body {
   text-decoration: none;
 }
 
-.product-btn {
+.product-btn:hover {
   background-color: #323232;
 }
 
