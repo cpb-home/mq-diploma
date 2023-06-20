@@ -463,11 +463,10 @@ body {
   background-color: #b59f5b;
   width: 48px;
   height: 48px;
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+  background-image: url("../svg/search.svg");
   background-size: 18px;
   background-repeat: no-repeat;
   background-position: center center;
-  box-sizing: border-box;
   cursor: pointer;
   vertical-align: top;
 }
@@ -646,7 +645,7 @@ body {
 .product-footer {
   margin-top: 22px;
   display: flex;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 }
 
 .product-prices {
@@ -695,7 +694,58 @@ body {
 
 /* footer */
 
+.footer {
+  margin-top: 43px;
+}
 
+.footer-container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer-icons-container {
+  padding: 30px 0;
+  background-color: #f4f7f6;
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.social-dribbble {
+  background: no-repeat center center url(../svg/001-dribbble.svg);
+}
+
+.social-pinterest {
+  background: no-repeat center center url(../svg/002-pinterest.svg);
+}
+
+.social-tumblr {
+  background: no-repeat center center url(../svg/003-tumblr.svg);
+}
+
+.footer-copyrights {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #999999;
+}
 
 
 
@@ -717,7 +767,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
   }
 
   .burger-menu-container {
@@ -898,11 +947,11 @@ body {
   .products-container {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 26px;
   }
 
   .product {
-    width: calc(50% - 12.5px);
+    width: calc(50% - 13px);
     display: flex;
     flex-direction: column;
   }
@@ -926,8 +975,31 @@ body {
   }
   
   .product-container {
-    margin: -33px auto 0;
+    margin: -31px auto 0;
     flex-grow: 1;
+  }
+
+  .product-footer {
+    padding-bottom: 26px;
+  }
+
+  
+  /* footer */
+
+  .footer {
+    margin-top: 50px;
+  }
+  
+  .footer-container {
+    padding: 0 35px;
+  }
+  
+  .footer-icons-container {
+    gap: 27px;
+  }
+  
+  .footer-copyrights {
+    margin: 47px auto;
   }
 
 }
@@ -1050,7 +1122,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
   }
 
   .menu-btn {
@@ -1296,55 +1367,36 @@ body {
   }
   
   .product-footer {
-    margin-top: 22px;
-    display: flex;
     padding-bottom: 25px;
     justify-content: space-between;
   }
   
   .product-prices {
     width: 47%;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  
-  .product-price-old {
-    color: #0f0d0e;
-    font-size: 14px;
-    line-height: 10px;
-    font-weight: 700;
-    text-decoration: line-through;
-  }
-  
-  .product-price-current {
-    margin-top: 5px;
-    color: #0f0d0e;
-    font-size: 20px;
-    line-height: 16px;
-    font-weight: 700;
   }
   
   .product-btn {
     width: 47%;
-    height: 49px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #b59f5b;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
-  .product-btn:hover {
-    background-color: #323232;
   }
 
+  /* footer */
+
+  .footer {
+    margin-top: 66px;
+  }
+  
+  .footer-container {
+    width: 1200px;
+    padding: 0 15px;
+  }
+  
+  .footer-icons-container {
+    gap: 27px;
+  }
+  
+  .footer-copyrights {
+    margin: 47px auto;
+  }
 
 
 }
