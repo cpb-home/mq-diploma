@@ -1,4 +1,4 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, img, date, ol, ul, li, form, label, article, aside, footer, header, menu, nav, section, time, button, input, picture, source {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, img, date, ol, ul, li, form, label, article, aside, footer, header, menu, nav, section, time, button, input, picture, source, textarea {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -6,17 +6,17 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, img, date, ol, ul,
 }
 
 @font-face {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: regular;
   font-weight: 400;
-  src: url(/mq-diploma/fonts/OpenSans-Regular.woff);
+  src: url(../fonts/OpenSans-Regular.woff);
 }
 
 @font-face {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: bold;
   font-weight: 700;
-  src: url(/mq-diploma/fonts/OpenSans-Bold.woff);
+  src: url(../fonts/OpenSans-Bold.woff);
 }
 
 html {
@@ -25,8 +25,136 @@ html {
 
 body {
   background-color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
 }
+
+._hidden {
+  display: none;
+}
+
+.pop-up-checkbox:not(:checked) + .pop-up-window {
+  display: none;
+}
+
+.pop-up-window {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up-window-container {
+  width: 330px;
+  flex-shrink: 1;
+  z-index: 5;
+  background-color: #fff;
+  padding: 35px 25px;
+  position: relative;
+}
+
+.pop-up-window-container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background-image: url(../svg/form-x.svg);
+  right: 0;
+  top: -32px;
+  z-index: 5;
+}
+
+.pop-up-window-header {
+  font-size: 16px;
+  line-height: 12px;
+  text-align: center;
+  color: #0f0d0e;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pop-up-window-header:after {
+  content: '';
+  display: block;
+  margin: 15px auto 0;
+  background-color: #b59f5b;
+  width: 67px;
+  height: 3px;
+  opacity: 0.4;
+}
+
+.pop-up-form {
+  display: block;
+}
+
+.pop-up-form-row {
+  position: relative;
+  margin-top: 30px;
+}
+
+.pop-up-field {
+  width: 100%;
+  background-color: #eff3f8;
+  padding: 17px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.pop-up-field-label {
+  font-size: 13px;
+  line-height: 15px;
+  display: block;
+}
+
+.pop-form-input-text {
+  position: relative;
+}
+
+.pop-form-input-text:after {
+  content: '';
+  background-image: url(../svg/form-arrows.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 17px;
+  top: 15px;
+}
+
+.pop-form-textarea {
+  height: 130px;
+  resize: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+.pop-form-input-btn {
+  margin-top: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  background-color: #b59f5b;
+  cursor: pointer;
+  color: #fff;
+}
+
+.pop-form-input-btn:hover {
+  background-color: #323232;
+}
+
 
 /* header */
 
