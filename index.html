@@ -1,5 +1,5 @@
-<!DOCTYPE ru>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,28 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="pop-up-window">
-      <form class="pop-up-form">
-
-      </form>
-    </div>
+    <input class="pop-up-checkbox _hidden" type="checkbox"  id="pop-up-checkbox" checked>
+    <label for="pop-up-checkbox" class="pop-up-window">
+      <div class="pop-up-window-container">
+        <h2 class="pop-up-window-header">Ваш фидбек</h2>
+        <form class="pop-up-form">
+          <div class="pop-up-form-row">
+            <label class="pop-up-field-label" for="pop-form-input-text">Как часто вы заходите на сайт?</label>
+            <input class="pop-form-input-text pop-up-field" type="text" placeholder="Почти каждый день" id="pop-form-input-text">
+          </div>
+          <div class="pop-up-form-row">
+            <label class="pop-up-field-label" for="pop-form-input-radio">Вы подписаны на e-mail рассылку?</label>
+            <input class="pop-form-input-radio" type="radio" name="radioButton" value="Да" checked id="pop-form-input-radio">
+            <input class="pop-form-input-radio" type="radio" name="radioButton" value="Нет">
+          </div>
+          <div class="pop-up-form-row">
+            <label class="pop-up-field-label" for="pop-form-textarea">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+            <textarea class="pop-form-textarea pop-up-field" placeholder="Может, больше рецептов?" id="pop-form-textarea"></textarea>
+          </div>
+          <input class="pop-form-input-btn" type="submit" value="Отправить">
+        </form>
+      </div>
+    </label>
     <header class="header">
       <div class="header-container">
         <div class="header-logo-line">
