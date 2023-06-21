@@ -902,8 +902,6 @@ body {
 
 
 
-
-
 @media (min-width: 361px) and (max-width: 1199px) {
   
 /* header */
@@ -1235,27 +1233,77 @@ body {
 
 
 
-
-
-
-
-
 @media (max-width: 640px) and (orientation: portrait) {
-  /* in 1 row */
+  /* in 1 column */
+  
+  .trends-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
-  /* in 2 rows */
+  /* in 2 columns */
+
+  .trends-container {
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  .trend {
+    width: calc(50% - 2px);
+  }
 }
 
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
-  /* in 2 rows */
+  /* in 2 columns */
+  .trends-container {
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  .trend {
+    flex: 1 1 calc(50% - 2px);
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
-  /* in 4 rows */
+  /* in 4 columns */
+  .trends-container {
+    flex-direction: row;
+  }
+
+  .trends-container {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .trend {
+    flex: 1 1 calc((100% / 4) - 5px * 3);
+    min-height: 320px;
+    padding: 10px;
+  }
+
+  .trend-container {
+    padding: 10px;
+  }
+
+  .trend-cat-item-link {
+    font-size: 12px;
+  }
+  
+  .trend-cat-item:nth-child(n+2) {
+    margin-left: 7px;
+  }
+  
+  .trend-header {
+    margin: 7px 0 0;
+    padding: 0 5px 0 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
+
 
 
 @media (min-width: 1200px) {
@@ -1553,21 +1601,3 @@ body {
 
 
 }
-
-
-
-
-/* 
-в среднем разрешении горизонтали проверить, не выводится ли 3 в ряд вместо 4 из-за слова подоконники
-
-После полной реализации вёрстки протестируйте её с помощью сервиса W3C Markup Validation Service */
-
-
-
-
-/* Вёрстка всплывающей формы (pop-up)
-Каждый макет содержит всплывающую форму на слое Pop-up, этот слой по умолчанию скрыт. Свёрстанная форма должна отображаться по центру экрана — поверх вуали, затемняющей страницу.
-
-Вам не нужно реализовывать всплытие формы и её скрывание при клике на крестик. Достаточно, чтобы форма была в разметке и ваш дипломный руководитель мог её найти.
-
-После того, как закончите с вёрсткой всплывающего окна, добавьте блоку класс _hidden и задайте этому классу свойства, скрывающие блок. */
