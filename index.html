@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <input class="pop-up-checkbox _hidden" type="checkbox"  id="pop-up-checkbox" checked>
+    <input class="pop-up-checkbox _hidden" type="checkbox"  id="pop-up-checkbox">
     <label for="pop-up-checkbox" class="pop-up-window">
       <div class="pop-up-window-container">
         <h2 class="pop-up-window-header">Ваш фидбек</h2>
@@ -18,9 +18,11 @@
             <input class="pop-form-input-text pop-up-field" type="text" placeholder="Почти каждый день" id="pop-form-input-text">
           </div>
           <div class="pop-up-form-row">
-            <label class="pop-up-field-label" for="pop-form-input-radio">Вы подписаны на e-mail рассылку?</label>
-            <input class="pop-form-input-radio" type="radio" name="radioButton" value="Да" checked id="pop-form-input-radio">
-            <input class="pop-form-input-radio" type="radio" name="radioButton" value="Нет">
+            <div class="pop-up-field-label">Вы подписаны на e-mail рассылку?</div>
+            <input class="pop-form-input-radio" type="radio" name="radioButton" value="Да" checked id="pop-form-input-radio-yes">
+            <label class="pop-up-field-label pop-up-radio-label" for="pop-form-input-radio-yes">Да</label>
+            <input class="pop-form-input-radio" type="radio" name="radioButton" value="Нет" id="pop-form-input-radio-no">
+            <label class="pop-up-field-label pop-up-radio-label" for="pop-form-input-radio-no">Нет</label>
           </div>
           <div class="pop-up-form-row">
             <label class="pop-up-field-label" for="pop-form-textarea">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
