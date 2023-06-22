@@ -26,6 +26,10 @@ body {
   font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
+.pop-up-checkbox {
+  display: none;
+}
+
 .pop-up-checkbox:not(:checked) + .pop-up-window {
   display: none;
 }
@@ -161,7 +165,6 @@ body {
   line-height: 18px;
   font-family: inherit;
 }
-
 
 .pop-form-input-btn {
   margin-top: 20px;
@@ -610,7 +613,7 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  clip-path: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
