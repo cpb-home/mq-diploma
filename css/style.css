@@ -602,8 +602,10 @@ body {
   min-width: 50px;
 }
 
-.search-field::-webkit-search-cancel-button {
-  display: none;
+.search-field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .visually-hidden {
