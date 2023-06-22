@@ -9,13 +9,19 @@
   </head>
   <body>
     <input class="pop-up-checkbox _hidden" type="checkbox"  id="pop-up-checkbox" checked>
-    <div for="pop-up-checkbox" class="pop-up-window">
+    <div class="pop-up-window">
       <div class="pop-up-window-container">
+        <label for="pop-up-checkbox" class="pop-up-close-btn" type="button"></label>
         <h2 class="pop-up-window-header">Ваш фидбек</h2>
         <form class="pop-up-form">
           <div class="pop-up-form-row">
-            <label class="pop-up-field-label" for="pop-form-input-text">Как часто вы заходите на сайт?</label>
-            <input class="pop-form-input-text pop-up-field" type="text" placeholder="Почти каждый день" id="pop-form-input-text">
+            <label class="pop-up-field-label" for="pop-form-select">Как часто вы заходите на сайт?</label>
+            <select class="pop-form-select pop-up-field" name="" id="">
+              <option value="Почти каждый день">Почти каждый день</option>
+              <option value="Почти каждый день">Иногда</option>
+              <option value="Почти каждый день">Кое-когда</option>
+              <option value="Почти каждый день">Только на нём и сижу</option>
+            </select>
           </div>
           <div class="pop-up-form-row">
             <div class="pop-up-field-label">Вы подписаны на e-mail рассылку?</div>
