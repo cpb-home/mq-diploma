@@ -7,14 +7,12 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, img, date, ol, ul,
 
 @font-face {
   font-family: 'Open Sans';
-  font-style: regular;
   font-weight: 400;
   src: url(../fonts/OpenSans-Regular.woff);
 }
 
 @font-face {
   font-family: 'Open Sans';
-  font-style: bold;
   font-weight: 700;
   src: url(../fonts/OpenSans-Bold.woff);
 }
@@ -54,7 +52,7 @@ body {
   position: relative;
 }
 
-.pop-up-window-container:before {
+.pop-up-close-btn {
   content: '';
   display: block;
   position: absolute;
@@ -64,6 +62,7 @@ body {
   right: 0;
   top: -32px;
   z-index: 5;
+  cursor: pointer;
 }
 
 .pop-up-window-header {
@@ -108,7 +107,10 @@ body {
   display: block;
 }
 
-.pop-form-input-text {
+.pop-form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   position: relative;
   background-image: url(../svg/form-arrows.svg);
   background-position: center right 15px;
