@@ -385,6 +385,8 @@ body {
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
+  max-height: 8.5em;
+  overflow: hidden;
 }
 
 
