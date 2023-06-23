@@ -11,7 +11,7 @@
     <input class="pop-up-checkbox _hidden" type="checkbox"  id="pop-up-checkbox" checked>
     <div class="pop-up-window">
       <div class="pop-up-window-container">
-        <label for="pop-up-checkbox" class="pop-up-close-btn"></label>
+        <button class="pop-up-close-btn"></button>
         <h2 class="pop-up-window-header">Ваш фидбек</h2>
         <form class="pop-up-form">
           <div class="pop-up-form-row">
@@ -359,7 +359,7 @@
       </div>
     </div>
 
-    <section class="products">
+    <div class="products">
       <h2 class="products-header">Наши изделия</h2>
       <div class="products-container">
         <article class="product">
@@ -443,7 +443,7 @@
           </div>
         </article>
       </div>
-    </section>
+    </div>
 
     <footer class="footer">
       <address class="footer-container">
@@ -457,4 +457,17 @@
     </footer>
 
   </body>
+
+    <script>
+      function closePopup() {
+        const btn = document.querySelector('.pop-up-close-btn');
+        const popup = document.querySelector('.pop-up-checkbox');
+
+        btn.addEventListener('click', (e) => {
+          if (popup.checked) popup.checked = false;
+        });
+      }
+
+      closePopup();
+    </script>
 </html>

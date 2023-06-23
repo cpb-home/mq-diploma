@@ -57,6 +57,7 @@ body {
 }
 
 .pop-up-close-btn {
+  background-color: rgba(0, 0, 0, 0);
   content: '';
   display: block;
   position: absolute;
@@ -314,7 +315,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 232px;
+  min-height: 232px;
 }
 
 .trend:after {
@@ -385,8 +386,6 @@ body {
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  max-height: 8.5em;
-  overflow: hidden;
 }
 
 
